@@ -11027,3 +11027,7 @@ p {
 .address strong {
   font-size: 1.2rem;
 }
+
+.margin-top-map {
+  margin-top: 20px;
+}
