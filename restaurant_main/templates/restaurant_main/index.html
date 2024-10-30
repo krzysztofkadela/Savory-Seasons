@@ -28,15 +28,15 @@
         </h1>
     </header>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 " id="mainNav">
         <div class="container">
-            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="{% url 'index' %}">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'index' %}">Home</a></li>
                     <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
                     <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Products</a>
                     </li>
@@ -85,7 +85,7 @@
     <section class="page-section cta">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 mx-auto">
+                <div class="col-xl-6 d-flex mx-auto">
                     <div class="cta-inner bg-faded text-center rounded">
                         <h2 class="section-heading mb-4">
                             <span class="section-heading-upper">See More</span>
@@ -100,8 +100,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6 mx-auto">
-                    <div class="map-wrapper cta-inner bg-faded mt-4 mt-lg-0">
+                <div class="col-lg-6 d-flex mx-auto">
+                    <div class="map-wrapper cta-inner bg-faded mt-4 mt-md-0 flex-fill p-4"> <!-- Add flex-fill and padding -->
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345075148!2d144.95373631531706!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0fd5c869%3A0xf5c46b3345c5cdff!2sYour%20Restaurant%20Name!5e0!3m2!1sen!2sus!4v1641389887025!5m2!1sen!2sus"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
