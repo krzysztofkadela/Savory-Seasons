@@ -1,0 +1,1 @@
+web: gunicorn savory_seasons.wsgi
